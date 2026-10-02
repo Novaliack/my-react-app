@@ -1,0 +1,33 @@
+.favorites-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.favorite-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    border-top: 4px solid #2575fc;
+}
+
+.favorite-card h3 {
+    color: #2575fc;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.favorite-card ul {
+    list-style: none;
+}
+
+.favorite-card li {
+    padding: 0.35rem 0;
+    border-bottom: 1px dashed #e0e0e0;
+    font-size: 0.95rem;
+}
+
+.favorite-card li:last-child {
+    border-bottom: none;
+}
