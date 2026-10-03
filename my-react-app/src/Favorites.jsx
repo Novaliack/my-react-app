@@ -1,5 +1,3 @@
-import './Favorites.css'
-
 const favorites = {
     Movies: ["Avengers Endgame", "Spirited Away", "Star Wars: Episode III - Revenge of the Sith"],
     Books: ["Frankenstein", "The Adventures of Sherlock Holmes", "The Odyssey"],
@@ -9,15 +7,27 @@ const favorites = {
 
 function Favorites(){
     return(
-        <section id="favorites" className="favorites">
-            <h2 className="section-title">Favorites</h2>
-            <div className="favorites-grid">
+        <section id="favorites">
+            <h2 className="text-3xl font-semibold text-blue-600 mb-4 border-l-4 border-purple-600 pl-3">
+                Favorites
+            </h2>
+            <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-4">
                 {Object.entries(favorites).map(([category, items]) => (
-                    <div className="favorite-card" key={category}>
-                        <h3>{category}</h3>
-                        <ul>
+                    <div
+                        key={category}
+                        className="bg-white rounded-xl p-5 shadow-md border-t-4 border-blue-500"
+                    >
+                        <h3 className="text-blue-600 font-semibold mb-3 text-lg">
+                            {category}
+                        </h3>
+                        <ul className="list-none">
                             {items.map((item, i) => (
-                                <li key={i}>{item}</li>
+                                <li
+                                    key={i}
+                                    className="py-1.5 border-b border-dashed border-gray-200 text-sm last:border-none"
+                                >
+                                    {item}
+                                </li>
                             ))}
                         </ul>
                     </div>

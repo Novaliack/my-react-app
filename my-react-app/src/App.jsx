@@ -8,7 +8,7 @@ function App() {
     return(
         <>
             <Header />
-            <main className="app-main">
+            <main className="flex-1 w-full px-8 py-10 flex flex-col gap-10">
                 <About />
                 <Hobbies />
                 <Favorites />

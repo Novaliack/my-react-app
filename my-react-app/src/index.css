@@ -1,18 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import "tailwindcss";
 
 body {
+    @apply bg-gray-100 text-slate-800 leading-relaxed;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f6f8;
-    color: #2c3e50;
-    line-height: 1.6;
 }
 
 #root {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    @apply min-h-screen flex flex-col;
 }
