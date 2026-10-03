@@ -1,8 +1,15 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 body {
-    @apply bg-gray-100 text-slate-800 leading-relaxed;
+    @apply bg-gray-100 text-slate-800 leading-relaxed transition-colors duration-300;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body.dark,
+.dark body {
+    @apply bg-slate-900 text-slate-100;
 }
 
 #root {
