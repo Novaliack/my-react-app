@@ -29,6 +29,11 @@ function Header({ darkMode, onToggleDarkMode }){
                             Favorites
                         </a>
                     </li>
+                    <li>
+                        <a href="#contact" className="text-white font-medium px-4 py-1.5 rounded-full transition-colors duration-200 hover:bg-white/20">
+                            Contact
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </header>

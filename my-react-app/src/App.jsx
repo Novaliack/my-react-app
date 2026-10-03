@@ -3,7 +3,9 @@ import Header from './Header.jsx'
 import About from './About.jsx'
 import Hobbies from './Hobbies.jsx'
 import Favorites from './Favorites.jsx'
+import Contact from './Contact.jsx'
 import Footer from './Footer.jsx'
+console.log("APP.JSX LOADED - Contact imported?", typeof Contact);
 
 function App() {
     const [darkMode, setDarkMode] = useState(() => {
@@ -30,6 +32,7 @@ function App() {
                 <About />
                 <Hobbies />
                 <Favorites />
+                <Contact />
             </main>
             <Footer />
         </>
