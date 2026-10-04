@@ -5,7 +5,6 @@ import Hobbies from './Hobbies.jsx'
 import Favorites from './Favorites.jsx'
 import Contact from './Contact.jsx'
 import Footer from './Footer.jsx'
-console.log("APP.JSX LOADED - Contact imported?", typeof Contact);
 
 function App() {
     const [darkMode, setDarkMode] = useState(() => {
