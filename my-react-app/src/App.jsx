@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Header from './Header.jsx'
 import About from './About.jsx'
+import Skills from './Skills.jsx'
 import Hobbies from './Hobbies.jsx'
 import Favorites from './Favorites.jsx'
 import Socials from './Socials.jsx'
@@ -31,6 +32,7 @@ function App() {
             <Header darkMode={darkMode} onToggleDarkMode={() => setDarkMode(prev => !prev)} />
             <main className="flex-1 w-full px-8 py-10 flex flex-col gap-10 transition-colors duration-300">
                 <About />
+                <Skills />
                 <Hobbies />
                 <Favorites />
                 <Socials />
