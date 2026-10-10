@@ -49,6 +49,11 @@ function Header({ darkMode, onToggleDarkMode }){
                             </a>
                         </li>
                         <li>
+                            <a href="#socials" className="text-purple-900 dark:text-purple-200 font-medium px-4 py-1.5 rounded-full transition-all duration-200 hover:bg-white/40 dark:hover:bg-purple-500/30 hover:text-purple-950 dark:hover:text-white hover:shadow-[0_0_12px_rgba(168,85,247,0.6)]">
+                                Socials
+                            </a>
+                        </li>
+                        <li>
                             <a href="#contact" className="text-purple-900 dark:text-purple-200 font-medium px-4 py-1.5 rounded-full transition-all duration-200 hover:bg-white/40 dark:hover:bg-purple-500/30 hover:text-purple-950 dark:hover:text-white hover:shadow-[0_0_12px_rgba(168,85,247,0.6)]">
                                 Contact
                             </a>

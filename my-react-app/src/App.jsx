@@ -3,8 +3,10 @@ import Header from './Header.jsx'
 import About from './About.jsx'
 import Hobbies from './Hobbies.jsx'
 import Favorites from './Favorites.jsx'
+import Socials from './Socials.jsx'
 import Contact from './Contact.jsx'
 import Footer from './Footer.jsx'
+
 
 function App() {
     const [darkMode, setDarkMode] = useState(() => {
@@ -31,6 +33,7 @@ function App() {
                 <About />
                 <Hobbies />
                 <Favorites />
+                <Socials />
                 <Contact />
             </main>
             <Footer />
